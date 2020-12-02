@@ -1,13 +1,6 @@
-import javax.swing.ImageIcon;
-import javax.swing.JFrame;
-import java.awt.Image;
-
-import javax.swing.JLabel;
-import javax.swing.JButton;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-import javax.swing.JComboBox;
-import javax.swing.JTextArea;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
 
 public class mainPage implements ActionListener{
 
@@ -36,7 +29,7 @@ public class mainPage implements ActionListener{
 
 		//creates a label and puts a map jpg on main GUI
 		JLabel map = new JLabel("");
-		Image img = new ImageIcon(this.getClass().getResource("/map1.jpg")).getImage();
+		Image img = new ImageIcon(this.getClass().getResource("/imgs/map1.jpg")).getImage();
 		map.setIcon(new ImageIcon(img));
 		map.setBounds(17, 89, 1034, 587);
 		frame.getContentPane().add(map);
