@@ -7,3 +7,6 @@ https://api.covid19api.com/total/dayone/country/%25s/status/confirmed
 
 ^This link gives us the covid data (totals) back to when it was first traced
 
+https://github.com/samayo/country-json/blob/master/src/country-by-population.json
+
+^This link gives us the population data for each country

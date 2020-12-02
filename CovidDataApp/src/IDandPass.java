@@ -3,7 +3,7 @@ import java.util.*;
 
 public class IDandPass {
 
-	HashMap<String,String> loginInfo = new HashMap<String,String>();
+	private HashMap<String,String> loginInfo = new HashMap<String,String>();
 
 	IDandPass(){
 		// Read all the text files in "users" and add them to "loginInfo"

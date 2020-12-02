@@ -11,8 +11,6 @@ public class Main {
 			System.out.println("Login Error");
 		}
 
-
-
 	}
 
 }
