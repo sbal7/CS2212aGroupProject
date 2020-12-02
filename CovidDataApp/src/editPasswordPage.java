@@ -13,13 +13,15 @@ public class editPasswordPage implements ActionListener {
         private static JButton submitButton;
         private static JLabel msg;
         private static JButton resetButton;
+        HashMap<String,String> loginInfo = new HashMap<String,String>();
         JFrame frame = new JFrame("Create New Password");
         JPanel panel = new JPanel();
         String user;
 
-    editPasswordPage(String username){
+    editPasswordPage(String username,HashMap<String,String>loginInfoNew){
 
         user = username;
+        loginInfo = loginInfoNew;
 
         frame.setSize(450,200);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -95,6 +97,9 @@ public class editPasswordPage implements ActionListener {
                 fileWriter.write(newPass);
                 fileWriter.close();
                 msg.setText("");
+                //find input in hashtable
+                loginInfo.remove(user);
+                loginInfo.put(user, newPass);
             }
             else {
                 msg.setForeground(Color.red);
