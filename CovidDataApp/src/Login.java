@@ -155,7 +155,7 @@ public class Login implements ActionListener {
 			if(loginInfo.containsKey(userID)){
 				// Opens edit password page
 				frame.dispose();
-				editPasswordPage newPasswordPage = new editPasswordPage(userID);
+				editPasswordPage newPasswordPage = new editPasswordPage(userID,loginInfo);
 			}
 			else {
 				success.setText("User Doesn't Exist");

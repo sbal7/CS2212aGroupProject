@@ -23,13 +23,13 @@ public class mainPage implements ActionListener{
 
 		//creates a window
 		frame = new JFrame("COVID-19 Stats");
-		frame.setBounds(1350, 1000, 1300, 900);
+		frame.setBounds(1350, 1000, 1350, 900);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 
 		//creates a label and puts a map jpg on main GUI
 		JLabel map = new JLabel("");
-		Image img = new ImageIcon(this.getClass().getResource("/imgs/map1.jpg")).getImage();
+		Image img = new ImageIcon(this.getClass().getResource("/imgs/map.jpg")).getImage();
 		map.setIcon(new ImageIcon(img));
 		map.setBounds(17, 89, 1034, 587);
 		frame.getContentPane().add(map);
@@ -71,7 +71,7 @@ public class mainPage implements ActionListener{
 
 		//drop down for analysis
 		analysisBox = new JComboBox();
-		analysisBox.setBounds(482, 665, 103, 27);
+		analysisBox.setBounds(482, 665, 150, 27);
 		frame.getContentPane().add(analysisBox);
 
 		//text for list of selected countries
